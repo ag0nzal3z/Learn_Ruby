@@ -30,3 +30,19 @@ puts "ejemplo".object_id
 # sera false aunque tengan el mismo valor
 puts :ejemplo.object_id == :ejemplo.object_id
 puts "ejemplo".object_id == "ejemplo".object_id
+# Los simbolos tienen algunos metodos como los de las cadenas
+# A los hash se les puede realizar preguntas, se puede saber el numero de pares que tienen
+puts ejemplo_hash.empty?
+puts ejemplo_hash.size
+# Saber si tiene una key con el valor que le indiquemos
+puts ejemplo_hash.key?(:clave3)
+puts ejemplo_hash.include?(:clave3)
+puts ejemplo_hash.member?(:clave3)
+# Saber si tiene un value con el valor que le indiquemos
+puts ejemplo_hash.value?("valor3")
+# Comprar dos hash, para ser true tienen que coincidir el mismo numero de key y de valores, y que se llamen igual
+# el orden en el que aparecen da igual
+puts ejemplo_hash == ejemplo_hash2
+puts ejemplo_hash == ejemplo_hash3
+ejemplo_hash4 = {clave3: "valor3", clave2: "valor2",  clave4: "valor4", clave1: "valor1"}
+puts ejemplo_hash == ejemplo_hash4
