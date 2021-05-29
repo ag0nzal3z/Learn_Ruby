@@ -46,3 +46,27 @@ end
 
 animal2 = Mamifero.new
 animal2.comer("Leche")
+
+# Al usar super dentro de un metodo estamos diciendo que busque ese metodo en la clase padre
+# Si a super no se le pasan argumentos, cogera los del metodo en que se encuentra
+# Para indicar que el metodo de la clase padre no recibe argumentos se usa super()
+
+class Leon < Mamifero
+    def initialize
+        @sexo = sexo
+        @nombre = "Leon"
+        @tipo = tipo
+    end
+
+    def comer(alimento = "carne")
+        super
+    end
+
+    def atacar
+        puts "Gruñido"
+    end
+end
+
+leon = Leon.new
+leon.comer
+leon.comer("Antilope")
