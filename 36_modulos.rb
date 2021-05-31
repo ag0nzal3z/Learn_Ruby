@@ -77,3 +77,14 @@ end
 pajaro1 = Pichon.new
 pajaro1.comunicarse
 
+# SCOPE DE LAS CONSTANTES EN MODULOS Y CLASES
+# Las constantes se definen en mayuscula o con la primera o mas letras en mayuscula
+CONSTANTE = 1
+Constante2 = 2
+CONStante3 = 3
+
+# Una constante inicializada en un modulo o clase superior,
+# podra ser usada por cualquier modulo o clase interna, 
+# pero no al reves
+
+# En los modulos tambien se pueden definir metodos protected y private
