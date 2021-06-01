@@ -1,0 +1,2 @@
+Empiezo y no truncode escritura en fichero 
+Esto se agregara despues de lo que ya hay
