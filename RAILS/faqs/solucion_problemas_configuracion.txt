@@ -1,0 +1,11 @@
+# Cambiar el puerto y la ip del servidor local de pruebas puma
+# Si ejecutamos el proyecto dentro de un contenedor
+ip_test=$(tail -n1 /etc/hosts | awk '{print $1}')
+rails s -p 3000 -b ${ip_test}
+
+
+# Error al ejecutar bundler install
+# bash: bundler: command not found
+gem install bundler -v '=1.10' --default
+gem uninstall bundler --version 2.0.1
+bundle install
