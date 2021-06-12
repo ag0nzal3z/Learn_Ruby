@@ -14,5 +14,6 @@ RUN gem install sqlite3 \
     && apt install -y vim \
     && apt install -y net-tools
 
+COPY conf_puma.sh .
 
 CMD [" "]
