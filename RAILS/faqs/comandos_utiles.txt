@@ -1,0 +1,9 @@
+# Crear nuevo proyecto Rails
+rails new NOMBRE_PROYECTO
+rails new holamundo
+
+
+# Crear un controlador y su vista
+rails generate controller NOMBRE_CONTROLADOR NOMBRE_VISTA
+rails generate controller prueba index
+
