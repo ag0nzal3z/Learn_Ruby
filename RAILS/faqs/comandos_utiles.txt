@@ -7,3 +7,9 @@ rails new holamundo
 rails generate controller NOMBRE_CONTROLADOR NOMBRE_VISTA
 rails generate controller prueba index
 
+# Crear un modelo
+rails generate model NOMBRE_MODELO ATRIBUTOS
+rails generate model Cliente nombre:string telefono:string direccion:string
+# Aplicar los cambios en la base de datos (Ejecutando la Migracion)
+rails db:migrate
+
